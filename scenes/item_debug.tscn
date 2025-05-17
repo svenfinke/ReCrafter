@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://cer1gbd7s5nt0"]
+
+[ext_resource type="Script" uid="uid://cyxs0dk7b5f5n" path="res://scenes/item_debug.gd" id="1_seist"]
+
+[node name="Item" type="PanelContainer"]
+offset_right = 444.0
+offset_bottom = 415.0
+script = ExtResource("1_seist")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="ItemName" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Awesome Sword"
+
+[node name="Implicits" type="VBoxContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Affixes" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Prefixes" type="VBoxContainer" parent="VBoxContainer/Affixes"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Suffixes" type="VBoxContainer" parent="VBoxContainer/Affixes"]
+unique_name_in_owner = true
+layout_mode = 2

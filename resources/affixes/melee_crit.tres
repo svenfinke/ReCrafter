@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemAffix" load_steps=2 format=3 uid="uid://1ii0p4nuf1jx"]
+
+[ext_resource type="Script" uid="uid://1g44w5kwcatt" path="res://classes/item_affix.gd" id="1_b8sju"]
+
+[resource]
+script = ExtResource("1_b8sju")
+id = "melee_crit"
+text_template = "+%d to melee crit chance"
+min_roll = 2
+max_roll = 10
+tier_multipliers = Array[float]([1.0, 1.5, 2.0, 2.5, 3.0, 4.5, 5.0])
+relevance = 1.0
+metadata/_custom_type_script = "uid://1g44w5kwcatt"

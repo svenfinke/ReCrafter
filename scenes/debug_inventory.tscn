@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://4mhlnen11bt2"]
+
+[ext_resource type="Script" uid="uid://hcvby6ij7w3c" path="res://scenes/debug_inventory.gd" id="1_drdos"]
+
+[node name="Inventory" type="PanelContainer"]
+offset_left = 698.0
+offset_top = 24.0
+offset_right = 969.0
+offset_bottom = 531.0
+script = ExtResource("1_drdos")
+
+[node name="Items" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2

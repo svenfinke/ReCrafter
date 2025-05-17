@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ItemType" load_steps=5 format=3 uid="uid://c46nvlomb37sj"]
+
+[ext_resource type="Script" uid="uid://51n6e7q8t1xx" path="res://classes/item_affix_instance.gd" id="1_41qf6"]
+[ext_resource type="Resource" uid="uid://bfdw4b35bxw3k" path="res://resources/affixes/mana.tres" id="2_lax6p"]
+[ext_resource type="Script" uid="uid://d0avm5vetunts" path="res://classes/item_type.gd" id="2_o7wpr"]
+
+[sub_resource type="Resource" id="Resource_je4eo"]
+script = ExtResource("1_41qf6")
+affix = ExtResource("2_lax6p")
+current_tier = 2
+current_roll = 0.7
+metadata/_custom_type_script = "uid://51n6e7q8t1xx"
+
+[resource]
+script = ExtResource("2_o7wpr")
+id = "shield"
+base_item_id = "bone_shield"
+suffixes = Array[ExtResource("1_41qf6")]([])
+prefixes = Array[ExtResource("1_41qf6")]([])
+implicits = Array[ExtResource("1_41qf6")]([SubResource("Resource_je4eo")])
+item_rarity = 0
+metadata/_custom_type_script = "uid://d0avm5vetunts"

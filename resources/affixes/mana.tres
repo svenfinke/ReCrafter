@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemAffix" load_steps=2 format=3 uid="uid://bfdw4b35bxw3k"]
+
+[ext_resource type="Script" uid="uid://1g44w5kwcatt" path="res://classes/item_affix.gd" id="1_i3gsg"]
+
+[resource]
+script = ExtResource("1_i3gsg")
+id = "flat_mana"
+text_template = "+%d to mana"
+min_roll = 10
+max_roll = 50
+tier_multipliers = Array[float]([1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0])
+relevance = 1.0
+metadata/_custom_type_script = "uid://1g44w5kwcatt"

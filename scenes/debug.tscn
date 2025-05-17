@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b16j7q3jy8gqw"]
+
+[ext_resource type="PackedScene" uid="uid://cer1gbd7s5nt0" path="res://scenes/item_debug.tscn" id="1_lgrwq"]
+[ext_resource type="PackedScene" uid="uid://4mhlnen11bt2" path="res://scenes/debug_inventory.tscn" id="2_3vd64"]
+[ext_resource type="PackedScene" uid="uid://dnii8so8w2ygn" path="res://scenes/debug_tools.tscn" id="2_4pmxj"]
+
+[node name="Debug" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Item" parent="CanvasLayer" instance=ExtResource("1_lgrwq")]
+offset_left = 21.0
+offset_top = 19.0
+offset_right = 411.0
+offset_bottom = 536.0
+
+[node name="Inventory" parent="CanvasLayer" instance=ExtResource("2_3vd64")]
+
+[node name="Tools" parent="CanvasLayer" instance=ExtResource("2_4pmxj")]
